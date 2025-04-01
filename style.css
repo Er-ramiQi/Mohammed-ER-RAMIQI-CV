@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: #34495e;
+}
+
+.conteneur {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.colonne-gauche { width: 65%; }
+.colonne-droite { width: 35%; }
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+}
+
+.photo-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--secondary-color);
+    margin: 0 auto 20px;
+}
+
+.sous-titre {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h2 i { margin-right: 10px; }
+
+.experience-item {
+    margin-bottom: 25px;
+}
+
+.badge {
+    background: var(--secondary-color);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.date { color: #7f8c8d; }
+
+.niveau {
+    height: 8px;
+    background: #ecf0f1;
+    border-radius: 4px;
+    margin: 5px 0 15px;
+}
+
+.niveau:after {
+    content: '';
+    display: block;
+    height: 100%;
+    background: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.niveau-90:after { width: 90%; }
+.niveau-85:after { width: 85%; }
+.niveau-80:after { width: 80%; }
+
+.fas, .fab, .far {
+    margin-right: 8px;
+    width: 20px;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover { color: #2980b9; }
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .conteneur { flex-direction: column; }
+    .colonne-gauche, .colonne-droite { width: 100%; }
+}
+
+.fa-user-secret { color: #3498db; }
+.fa-network-wired { color: #3498db; }
